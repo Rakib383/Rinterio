@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
 
+    <!-- font-awesome cdn for icons -->
+    <script
+      src="https://kit.fontawesome.com/70e3d08f9c.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisyUI & tailwind cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -20,16 +25,97 @@
       rel="stylesheet"
     />
     <style>
-      .manrope-font{
+      .manrope-font {
         font-family: "Manrope", sans-serif;
       }
     </style>
   </head>
 
-  <body class="manrope-font">
-    <header></header>
+  <body class="manrope-font container mx-auto">
+    <!-- header -->
+    <header class="bg-gradient-to-r from-gray-50 to-gray-100 ">
+      <!-- navbar -->
+      <nav>
+        <div class="navbar px-4 py-5">
+          <div class="navbar-start hover:cursor-pointer">
+            <i
+              class="fa-solid fa-arrow-right -rotate-45 px-2 py-1.5 rounded-full bg-lime-300 mr-1"
+            ></i>
+            <span class="text-2xl font-extrabold">Rinterio</span>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="hover:text-black text-[#737373] font-semibold text-sm"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black text-[#737373] font-semibold text-sm"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black text-[#737373] font-semibold text-sm"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-black text-[#737373] font-semibold text-sm"
+                  >Blogs</a
+                >
+              </li>
+
+              <li>
+                <a class="hover:text-black text-[#737373] font-semibold text-sm"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-2">
+            <i
+              class="fa-solid fa-cart-shopping px-2.5 py-1.5 hover:bg-white rounded-full text-lg hidden md:block"
+            ></i>
+            <i
+              class="fa-solid fa-magnifying-glass px-2 py-1 hover:bg-white rounded-full text-lg hidden md:block"
+            ></i>
+            <button
+              class="btn font-black text-sm bg-lime-300 px-2.5 py-2 rounded-3xl hidden md:block"
+            >
+              Book Consult
+              <i
+                class="fa-solid fa-arrow-right px-2.5 py-1 rounded-full -rotate-45 bg-black text-white mr-1 text-base ml-1"
+              ></i>
+            </button>
+
+            <i
+              class="fa-solid fa-bars lg:hidden text-xl hover:bg-white px-3 py-2 rounded-full"
+            ></i>
+          </div>
+        </div>
+      </nav>
+          <!-- hero-section -->
+
+          <div class="hero">
+            <div class="hero-content text-center ">
+              <div class=" flex flex-col max-w-screen-sm justify-center items-center">
+                <img src="./assets/banner.png" class="" alt="">
+                <h1 class="text-3xl md:text-4xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 text-[#737373] text-sm md:text-base">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn bg-lime-300 rounded-full font-bold w-full md:w-[160px]">View Details
+                  <i
+                  class="fa-solid fa-arrow-right -rotate-45 px-2 py-1.5 rounded-full bg-lime-400 mr-1"
+                ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+      
+    </header>
     <main></main>
     <footer></footer>
-   
   </body>
 </html>
